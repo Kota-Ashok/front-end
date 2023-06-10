@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Signup Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url(HOME.jpg);
+
+    }
+    
+    .container {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      background-image:url(HOME.jpg);
+      border: 1px solid gray;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+    
+    .container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+    }
+    
+    .container label {
+      font-weight: bold;
+      color: #555;
+    }
+    
+    .container input[type="text"],
+    .container input[type="email"],
+    .container input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid grey;
+      border-radius: 5px;
+    }
+    
+    .container input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      background-color: #4CAF50;
+      border: none;
+      border-radius: 5px;
+      color:gray;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    
+    .container input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+    
+    .container .message {
+      text-align: center;
+      margin-top: 10px;
+      color: #777;
+    }
+    
+    .container .social-media {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    
+    .container .social-media a {
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      margin: 0 5px;
+      border-radius: 50%;
+      background-color: #555;
+      color: grey;
+      font-size: 18px;
+      text-align: center;
+      line-height: 40px;
+      transition: background-color 0.3s ease;
+    }
+    
+    .container .social-media a:hover {
+      background-color: #777;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Signup</h2>
+    <form action="signup.php" method="POST">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+      
+      <input type="submit" value="Signup">
+      
+      <p class="message">Already have an account? <a href="login.html">Login</a></p>
+      
+      <div class="social-media">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </form>
+  </div>
+  
+  <!-- Font Awesome CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" integrity="sha512-nNeJUpLnG+LFRprAgQmb4ej4vD3kTV0RQYbZS83cG3J2qr6QvGtDH3bOnl4mWq3U60I+ZMvq2A9gZspUUteZbA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>
